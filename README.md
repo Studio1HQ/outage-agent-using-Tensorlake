@@ -118,26 +118,6 @@ python test_remote_outage_agent.py
 python test_remote_outage_agent.py "Alert: Database connection pool exhausted"
 ```
 
-**Using the CLI wrapper (optional):**
-```bash
-# Install CLI dependencies
-pip install click
-
-# Run locally
-python outage_agent_cli.py local "Alert: Service degradation detected"
-
-# Run remotely
-python outage_agent_cli.py remote "Alert: Service degradation detected"
-
-# Run test alert
-python outage_agent_cli.py test
-
-# Read alert from file
-python outage_agent_cli.py local --file alert.txt
-
-# JSON output
-python outage_agent_cli.py local "Alert text" --json-output
-```
 
 ## Agent Behavior
 
@@ -222,14 +202,6 @@ The agent provides structured output in three formats:
    - Escalation decision and recommendations
 3. **Slack-Friendly Format**: Condensed version for notifications
 
-## 🤝 Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Built with [Tensorlake](https://tensorlake.ai) for serverless AI deployment
@@ -240,7 +212,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Support
 
 For issues and questions:
-- Open an issue on [GitHub](https://github.com/Aakash67/Outage-agent-by-Tensorlake/issues)
 - Check the [Tensorlake documentation](https://docs.tensorlake.ai)
-- Review `DEPLOYMENT.md` for deployment help
 
